@@ -97,8 +97,8 @@ This analysis uses data from the **PREVENT-AD** cohort. Data access is restricte
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/yourusername/preventad-resilience-proteomics.git
-cd preventad-resilience-proteomics
+git clone https://github.com/nguyenminh2301/CSF_Proteomic_PreAD.git
+cd CSF_Proteomic_PreAD
 ```
 
 2. **Obtain PREVENT-AD data access**:
@@ -110,7 +110,7 @@ cd preventad-resilience-proteomics
 
 ```r
 # In R, set working directory to repository root
-setwd("path/to/preventad-resilience-proteomics")
+setwd("path/to/CSF_Proteomic_PreAD")
 
 # Run main analysis
 source("R/01_main_analysis.R")
