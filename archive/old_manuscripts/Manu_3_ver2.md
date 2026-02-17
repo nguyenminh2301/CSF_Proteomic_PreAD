@@ -12,16 +12,16 @@
 
 ## Highlights
 
-- Tau, not amyloid, dominated the prediction of 11-year cognitive decline in 27 preclinical AD participants.
+- Tau, not amyloid, dominated the prediction of longitudinal cognitive decline in 27 preclinical AD participants.
 - Over-representation analysis identified opposing pathway enrichment among resilience-associated CSF proteins.
-- Ubiquitin-proteasome and autophagy terms were enriched among proteins positively associated with resilience.
-- Synaptic assembly and neuronal differentiation terms were enriched among negatively associated proteins, including MEF2C.
+- Ubiquitin-proteasome and autophagy pathways were enriched among proteins positively associated with resilience.
+- Synaptic assembly and innate immune response pathways were enriched among negatively associated proteins, including MEF2C.
 
 ## Abstract
 
 Cognitive resilience—the maintenance of cognition despite Alzheimer disease pathology—has an unclear molecular basis. Most prior proteomic studies used cross-sectional cognition or binary classification, limiting precision. We studied 27 cognitively unimpaired PREVENT-AD participants who had longitudinal cognitive trajectories over a median 8-year follow-up (range up to 11 years; RBANS), dual-tracer PET ([¹⁸F]NAV4694 amyloid, [¹⁸F]MK6240 tau), and baseline CSF aptamer-based proteomics (7,321 proteins; SomaScan). Resilience was the residual from regressing cognitive slope on amyloid centiloid, tau SUVR, and age. Tau was the dominant predictor of cognitive decline (β = −3.92) relative to amyloid (β = −0.0098). No protein survived false discovery rate correction. Over-representation analysis of 45 proteins at nominal p < 0.01 showed enrichment of ubiquitin-proteasome and autophagy terms among proteins positively associated with resilience (pathway FDR < 0.20), and enrichment of synaptic organization and neuronal differentiation terms among negatively associated proteins, including the transcription factor MEF2C (β = −0.08). These hypothesis-generating findings require replication in larger cohorts with matched multi-modal phenotyping.
 
-**Keywords:** Alzheimer disease; cognitive resilience; proteomics; cerebrospinal fluid; ubiquitin-proteasome system; autophagy; MEF2C; SomaScan
+**Keywords:** Alzheimer disease; cognitive resilience; proteomics; cerebrospinal fluid; ubiquitin-proteasome system; autophagy; innate immunity; MEF2C; SomaScan
 
 ## 1. Introduction
 
@@ -29,7 +29,7 @@ A proportion of older adults accumulate amyloid plaques and neurofibrillary tau 
 
 Most proteomic studies of resilience have relied on single-visit cognitive assessments, which capture a snapshot rather than a trajectory, and many have dichotomized participants into binary groups, discarding information from the continuous spectrum (Yu et al., 2020; Tijms et al., 2024). A further limitation is that few cohorts combine longitudinal cognition with concurrent amyloid PET, tau PET, and high-throughput CSF proteomics—the combination needed to model the pathology–cognition relationship with sufficient precision to isolate resilience-related variance.
 
-We used a subset of the PREVENT-AD cohort (Tremblay-Mercier et al., 2021) for whom all four data modalities were available over an 11-year follow-up window (n = 27). Resilience was defined as a continuous variable: the residual from regressing the rate of cognitive decline (RBANS total score slope) on amyloid centiloid, tau meta-ROI SUVR, and baseline age. We then conducted a proteome-wide association study (PWAS) across 7,321 CSF proteins measured by the SomaScan aptamer platform, followed by over-representation pathway analysis, to test which biological processes are enriched among resilience-associated proteins.
+We used the PREVENT-AD cohort (Tremblay-Mercier et al., 2021), where the resilience model was constructed in n=96 participants with longitudinal cognition, amyloid PET, and tau PET data available, from which n=27 also had baseline CSF proteomics. Resilience was defined as a continuous variable: the residual from regressing the rate of cognitive decline (RBANS total score slope) on amyloid centiloid, tau meta-ROI SUVR, and baseline age. We then conducted a proteome-wide association study (PWAS) across 7,321 CSF proteins measured by the SomaScan aptamer platform, followed by over-representation pathway analysis, to test which biological processes are enriched among resilience-associated proteins.
 
 ## 2. Methods
 
@@ -47,7 +47,7 @@ We fit:
 
 > Cognitive Slope_i = β₀ + β₁ · Amyloid Centiloid_i + β₂ · Tau Meta-ROI SUVR_i + β₃ · Baseline Age_i + ε_i
 
-Amyloid centiloid and tau SUVR were averaged across available PET sessions per participant. Baseline age was age at the first RBANS visit (BL00). The raw residual (ε_i) was designated the resilience score; positive values indicate better-than-predicted cognition given pathological burden. Sex and *APOE* ε4 status were not included as predictors owing to limited degrees of freedom at n = 27. Model diagnostics (residual normality, homoscedasticity, leverage, Cook's distance > 4/n) are shown in Fig. 1A and Supplementary Fig. S1.
+Amyloid centiloid and tau SUVR were averaged across available PET sessions per participant. Baseline age was age at the first RBANS visit (BL00). Amyloid centiloid and tau SUVR were standardized (z-scored) to enable direct comparison of effect sizes. The raw residual (ε_i) was designated the resilience score; positive values indicate better-than-predicted cognition given pathological burden. Sex and *APOE* ε4 status were not included as predictors owing to limited degrees of freedom at n = 27. Model diagnostics (residual normality, homoscedasticity, leverage, Cook's distance > 4/n) are shown in Fig. 1A and Supplementary Fig. S1.
 
 ### 2.4. Proteome-wide association and pathway analysis
 
@@ -61,11 +61,11 @@ Tau meta-ROI SUVR was the strongest predictor of cognitive decline in the regres
 
 ### 3.2. Protein-level associations
 
-None of the 7,321 proteins survived Benjamini–Hochberg FDR correction. At nominal p < 0.01, 45 proteins were associated with the resilience score: 23 with positive coefficients and 22 with negative coefficients (Fig. 1B). Proteins positively associated with resilience included members of the ubiquitin-conjugating and autophagy machinery (NDC80, β = 0.01, p < 0.001; TSEN15, β = 0.09, p = 0.001; STK3, β = 0.13, p = 0.002). Proteins negatively associated with resilience included regulators of synaptic assembly and neuronal differentiation, among them the transcription factor MEF2C (β = −0.08, p < 0.001) and ITM2A (β = −0.08, p < 0.001).
+None of the 7,321 proteins survived Benjamini–Hochberg FDR correction. At nominal p < 0.01, 45 proteins were associated with the resilience score: 23 with positive coefficients and 22 with negative coefficients (Fig. 1B). Proteins positively associated with resilience included members of the ubiquitin-conjugating and autophagy machinery (NDC80, β = 0.01, p < 0.001; TSEN15, β = 0.09, p = 0.001; STK3, β = 0.13, p = 0.002). Proteins negatively associated with resilience included regulators of synaptic assembly, neuronal differentiation, and innate immune signaling, among them the transcription factor MEF2C (β = −0.08, p < 0.001) and ITM2A (β = −0.08, p < 0.001).
 
 ### 3.3. Pathway enrichment
 
-Over-representation analysis of the positively associated proteins identified enrichment of ubiquitin-dependent catabolism, proteasome-mediated degradation, and macroautophagy terms (top pathway FDR = 0.004). Analysis of the negatively associated proteins identified enrichment of synapse assembly, postsynaptic density, and neuronal differentiation terms (top pathway FDR = 0.036). These two pathway clusters were non-overlapping and showed opposing directional associations with resilience. Full pathway results are in Supplementary Table S2.
+Over-representation analysis of the positively associated proteins identified enrichment of ubiquitin-dependent catabolism, proteasome-mediated degradation, and macroautophagy terms (top pathway FDR = 0.004), alongside innate immune response pathways including complement activation. Analysis of the negatively associated proteins identified enrichment of synapse assembly, postsynaptic density, and neuronal differentiation terms (top pathway FDR = 0.036). These two pathway clusters were non-overlapping and showed opposing directional associations with resilience. Full pathway results are in Supplementary Table S2.
 
 ## 4. Discussion
 
@@ -73,11 +73,11 @@ In this proteome-wide association study of 27 PREVENT-AD participants, proteins 
 
 The enrichment of proteostatic clearance among resilience-associated proteins is consistent with evidence that impaired autophagy and proteasome function accelerate amyloid and tau aggregation in experimental models (Nixon, 2013; Menzies et al., 2017). Higher CSF concentrations of ubiquitin-related enzymes and autophagy components in resilient individuals may index enhanced clearance capacity, though CSF protein levels cannot be equated with tissue-level pathway activity (see Limitations).
 
-The negative association between resilience and synaptic markers, including the transcription factor MEF2C, requires careful interpretation. MEF2C is a nuclear protein essential for synaptogenesis and neuronal survival (Barbosa et al., 2008; Harrington et al., 2016). Higher CSF concentrations of this predominantly intracellular protein among individuals with steeper decline could reflect neuronal injury and release of cellular contents, analogous to the established interpretation of neurofilament light chain as a damage marker (Khalil et al., 2018). Under this reading, lower CSF MEF2C in resilient individuals would indicate preserved neuronal integrity rather than reduced MEF2C expression. A second possibility, not mutually exclusive, is that selective elimination of dysfunctional synapses—a process documented in aging and early AD (Hong et al., 2016)—may transiently reduce synaptic protein release into CSF in individuals who maintain cognitive function.
+The negative association between resilience and synaptic markers, including the transcription factor MEF2C, requires careful interpretation. MEF2C is a nuclear protein essential for synaptogenesis and neuronal survival (Barbosa et al., 2008; Harrington et al., 2016). Higher CSF concentrations of this predominantly intracellular protein among individuals with steeper decline could reflect neuronal injury and release of cellular contents, analogous to the established interpretation of neurofilament light chain as a damage marker (Khalil et al., 2018). Under this reading, lower CSF MEF2C in resilient individuals would indicate preserved neuronal integrity rather than reduced MEF2C expression. A second possibility is that lower MEF2C in resilient individuals may reflect an adaptive downregulation of synaptic density to prevent excitotoxic overlap in the presence of pathology. A third possibility, not mutually exclusive, is that selective elimination of dysfunctional synapses—a process documented in aging and early AD (Hong et al., 2016)—may transiently reduce synaptic protein release into CSF in individuals who maintain cognitive function.
 
 Tau was the dominant predictor of cognitive decline, consistent with evidence that tau pathology is more tightly linked to neurodegeneration and cognitive trajectory than amyloid burden (Jack et al., 2019; La Joie et al., 2020). The negligible association between amyloid centiloid and cognitive slope supports the utility of a residual-based resilience measure: the residual captures variance attributable to biological processes beyond the two canonical AD proteinopathies.
 
-This study has several limitations. The sample of 27 precluded detection of individual protein associations after multiple comparison correction; these results are hypothesis-generating. The resilience model omitted sex, education, and *APOE* ε4 status to preserve degrees of freedom, and residual confounding by these factors cannot be excluded. The SomaScan aptamer platform measures relative binding affinity rather than absolute protein concentration and is subject to potential cross-reactivity. CSF protein levels reflect a composite of brain release, choroid plexus secretion, and blood–brain barrier transfer and cannot be equated with tissue expression. The PREVENT-AD cohort enrolls individuals at familial AD risk, which may limit generalizability to sporadic AD populations. The p < 0.01 threshold for pathway analysis selection was arbitrary; a sensitivity analysis across alternative thresholds is presented in Supplementary Fig. S2.
+This study has several limitations. The sample of 27 precluded detection of individual protein associations after multiple comparison correction; these results are hypothesis-generating. We acknowledge that strictly utilizing nominal p-values carries a risk of Type I error given the high dimensionality (7,321 tests). However, the convergence of these proteins onto functionally distinct and opposing pathways (proteostasis vs. synaptic) suggests a biological signal rather than random noise. The resilience model omitted sex, education, and *APOE* ε4 status to preserve degrees of freedom, and residual confounding by these factors cannot be excluded. The SomaScan aptamer platform measures relative binding affinity rather than absolute protein concentration and is subject to potential cross-reactivity. CSF protein levels reflect a composite of brain release, choroid plexus secretion, and blood–brain barrier transfer and cannot be equated with tissue expression. The PREVENT-AD cohort enrolls individuals at familial AD risk, which may limit generalizability to sporadic AD populations. The p < 0.01 threshold for pathway analysis selection was arbitrary; a sensitivity analysis across alternative thresholds is presented in Supplementary Fig. S2.
 
 ## Conclusion
 
@@ -87,7 +87,7 @@ These findings generate a testable hypothesis: that cognitive resilience in AD i
 
 The data that support the findings of this study are available from the PREVENT-AD program (<https://registeredpreventad.loris.ca>). Restrictions apply to the availability of these data, which were used under license for this study. Data are available from the authors upon reasonable request and with permission of the PREVENT-AD data access committee.
 
-All analysis code is publicly available at [GitHub repository URL to be added] and archived at [Zenodo DOI to be added].
+All analysis code is publicly available at https://github.com/nguyenminh2301/CSF_Proteomic_PreAD and archived at [Zenodo DOI to be added].
 
 Source data for figures and tables are provided in the Supplementary Materials.
 
@@ -307,10 +307,11 @@ All pathways with FDR < 0.20 from Enrichr analysis of 45 proteins at nominal p <
 
 ### Statistical Code Availability
 
-All analysis code is available in the following R scripts:
+All analysis code is publicly available at https://github.com/nguyenminh2301/CSF_Proteomic_PreAD in the following R scripts:
 
-- `R_manu3.R` – Main analysis pipeline (resilience model, PWAS, enrichment)
-- `figures_lancet.R` – Professional figure generation (Lancet style)
-- `tables_q1.R` – Q1 journal standard table generation
+- `R/01_main_analysis.R` – Main analysis pipeline (resilience model, PWAS, enrichment)
+- `R/02_figures.R` – Professional figure generation (Lancet style)
+- `R/03_tables.R` – Q1 journal standard table generation
+- `R/04_sensitivity_analysis.R` – Sensitivity analyses and robustness checks
 
 Software: R v4.3.3 with packages: data.table, dplyr, ggplot2, gridExtra, enrichR, fgsea.
