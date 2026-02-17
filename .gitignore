@@ -96,6 +96,7 @@ parts/
 sdist/
 var/
 wheels/
+manuscript/
 *.egg-info/
 .installed.cfg
 *.egg
