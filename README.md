@@ -4,13 +4,15 @@
 [![R](https://img.shields.io/badge/R-4.3.3-blue.svg)](https://www.r-project.org/)
 [![Status](https://img.shields.io/badge/Status-Under%20Review-orange.svg)]()
 
-This repository contains analysis code and supplementary materials for the manuscript:
+This repository contains analysis code and supplementary materials for the research project:
 
 > **CSF proteomic correlates of cognitive resilience in preclinical Alzheimer disease: opposing pathway enrichment for proteostasis and synaptic functions**
 
 ## 📋 Overview
 
-Cognitive resilience—the maintenance of cognition despite Alzheimer disease pathology—has an unclear molecular basis. This study investigated CSF protein associations with cognitive resilience in 27 cognitively unimpaired PREVENT-AD participants with longitudinal cognitive trajectories (median 8-year follow-up), dual-tracer PET, and high-throughput proteomics.
+Cognitive resilience—the maintenance of cognition despite Alzheimer disease pathology—has an unclear molecular basis. This research investigated CSF protein associations with cognitive resilience in 27 cognitively unimpaired PREVENT-AD participants with longitudinal cognitive trajectories (median 8-year follow-up), dual-tracer PET, and high-throughput proteomics.
+
+> **Note**: The manuscript document is not included in this public repository. This repository contains analysis code, figures, tables, and processed data only.
 
 ### Key Findings
 
@@ -27,8 +29,7 @@ Cognitive resilience—the maintenance of cognition despite Alzheimer disease pa
 ├── LICENSE                   # MIT License
 ├── .gitignore               # Git ignore rules
 ├── CITATION.cff             # Citation file
-├── manuscript/              # Manuscript files
-│   └── manuscript.md        # Main manuscript (Markdown)
+# Note: Manuscript files are not included in this public repository
 ├── R/                       # R analysis code
 │   ├── 01_main_analysis.R   # Resilience model, PWAS, enrichment
 │   ├── 02_figures.R         # Professional figure generation (Lancet style)
@@ -159,8 +160,8 @@ If you use this code or data, please cite:
 
 ```
 Nguyen MT, Mai TT. CSF proteomic correlates of cognitive resilience in 
-preclinical Alzheimer disease: opposing pathway enrichment for proteostasis 
-and synaptic functions. Neurobiology of Aging. [Under Review]
+preclinical Alzheimer's disease: opposing pathway enrichment for proteostasis 
+and synaptic functions. [Manuscript in preparation]
 ```
 
 And the PREVENT-AD cohort paper:
