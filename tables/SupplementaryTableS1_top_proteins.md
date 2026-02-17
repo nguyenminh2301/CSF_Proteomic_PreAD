@@ -1,0 +1,29 @@
+**Supplementary Table S1. Top 20 protein associations with cognitive resilience**
+
+| Rank | Protein | β | SE | t | p-value | FDR | Direction |
+|------|---------|---|---|---|---------|-----|-----------|
+| 1 | NDC80 | 0.0145 | 0.0036 | 4.07 | <0.001 | 0.897 | Positive (better resilience) |
+| 2 | TSEN15 | 0.0938 | 0.0260 | 3.61 | 0.001 | 0.897 | Positive (better resilience) |
+| 3 | STK3 | 0.1266 | 0.0367 | 3.45 | 0.002 | 0.897 | Positive (better resilience) |
+| 4 | RNF41 | 0.0578 | 0.0174 | 3.32 | 0.003 | 0.897 | Positive (better resilience) |
+| 5 | NECTIN4 | 0.1365 | 0.0417 | 3.27 | 0.003 | 0.897 | Positive (better resilience) |
+| 6 | C1QC | 0.0395 | 0.0123 | 3.21 | 0.004 | 0.897 | Positive (better resilience) |
+| 7 | OSM | 0.0963 | 0.0301 | 3.20 | 0.004 | 0.897 | Positive (better resilience) |
+| 8 | CLPS | 0.1800 | 0.0564 | 3.19 | 0.004 | 0.897 | Positive (better resilience) |
+| 9 | IP6K2 | 0.1051 | 0.0330 | 3.19 | 0.004 | 0.897 | Positive (better resilience) |
+| 10 | GOLM2 2 | 0.0248 | 0.0078 | 3.19 | 0.004 | 0.897 | Positive (better resilience) |
+| 11 | CFHR3 | -0.0898 | 0.0209 | -4.30 | <0.001 | 0.897 | Negative (worse resilience) |
+| 12 | PTTG1 | -0.0824 | 0.0201 | -4.09 | <0.001 | 0.897 | Negative (worse resilience) |
+| 13 | CCDC90B | -0.0746 | 0.0194 | -3.85 | <0.001 | 0.897 | Negative (worse resilience) |
+| 14 | MEF2C | -0.0835 | 0.0217 | -3.85 | <0.001 | 0.897 | Negative (worse resilience) |
+| 15 | ITM2A | -0.0816 | 0.0214 | -3.81 | <0.001 | 0.897 | Negative (worse resilience) |
+| 16 | LTBR | -0.0387 | 0.0105 | -3.69 | 0.001 | 0.897 | Negative (worse resilience) |
+| 17 | C7orf69 | -0.1590 | 0.0476 | -3.34 | 0.003 | 0.897 | Negative (worse resilience) |
+| 18 | CD200R1 2 | -0.1050 | 0.0316 | -3.32 | 0.003 | 0.897 | Negative (worse resilience) |
+| 19 | ITGAV|ITGB6 | -0.0945 | 0.0294 | -3.22 | 0.004 | 0.897 | Negative (worse resilience) |
+| 20 | C1QTNF9 | -0.0755 | 0.0238 | -3.17 | 0.004 | 0.897 | Negative (worse resilience) |
+
+
+Top 10 positive and top 10 negative associations from PWAS (n=27, 7,321 proteins tested).
+No protein survived FDR correction at q < 0.05.
+MEF2C: Myocyte Enhancer Factor 2C; NDC80: Kinetochore complex component.

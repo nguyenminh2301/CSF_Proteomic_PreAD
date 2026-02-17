@@ -1,0 +1,230 @@
+# ============================================
+# Git Ignore for PREVENT-AD Manuscript 3
+# ============================================
+
+# ============================================
+# DATA FILES (Confidential - Never commit)
+# ============================================
+
+# Raw PREVENT-AD data (restricted access)
+data/raw/
+data/external/
+*.csv.gz
+*.tsv.gz
+*.zip
+*.tar.gz
+
+# Large data files
+*.sav
+*.dta
+*.rds
+*.RData
+*.rda
+*.fst
+*.feather
+
+# Specific raw data patterns (PREVENT-AD identifiers)
+*CONP*.csv
+*prevent_ad_raw*
+*preventad_raw*
+
+# ============================================
+# SECRETS & CREDENTIALS
+# ============================================
+
+# API keys and tokens
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.local
+.env.*.local
+
+# RStudio credentials
+.Renviron
+rsconnect/
+
+# ============================================
+# R SPECIFIC
+# ============================================
+
+# R history and session files
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user/
+
+# RStudio temporary files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# renv
+renv/library/
+renv/staging/
+renv/local/
+
+# Packrat
+packrat/lib*/
+packrat/src/
+
+# ============================================
+# PYTHON (if any)
+# ============================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================
+# OUTPUTS & TEMPORARY FILES
+# ============================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+*.out
+
+# Rendered documents
+*.html
+*.docx
+*.pdf
+!figures/**/*.pdf  # Keep figure PDFs
+!manuscript/manuscript.pdf  # Keep final manuscript
+
+# Generated reports
+*_cache/
+*_files/
+
+# ============================================
+# FIGURES (Keep high-res, ignore temp)
+# ============================================
+
+# Temporary figure files
+Rplots.pdf
+Rplots*.png
+
+# Low-res temporary versions
+*.png.lowres
+*.jpg.lowres
+
+# Keep main figures but allow gitignore to skip if needed
+# (Figures are kept in repo for manuscript completeness)
+
+# ============================================
+# IDE & EDITOR FILES
+# ============================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+
+# Sublime Text
+*.sublime-*
+
+# ============================================
+# OS SPECIFIC
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# LARGE FILES (>100MB GitHub limit)
+# ============================================
+
+# Neuroimaging files
+*.nii
+*.nii.gz
+*.mnc
+*.mnc.gz
+*.img
+*.hdr
+
+# Large TIFF files (uncomment if too large)
+# *.tiff
+# figures/**/*.tiff
+
+# ============================================
+# ARCHIVE (Keep but don't track changes)
+# ============================================
+
+archive/**/desktop.ini
+archive/**/*.tmp
+
+# ============================================
+# DOCUMENTATION BUILD
+# ============================================
+
+_site/
+bookdown_files/
+docs/articles/*_cache/
+docs/articles/*_files/
+
+# ============================================
+# TESTING
+# ============================================
+
+tests/testthat/_snaps/**/*.new.md
+coverage/
+.coverage
+*.cover

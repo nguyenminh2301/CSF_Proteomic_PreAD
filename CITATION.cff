@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the manuscript and the software itself."
+type: software
+title: "CSF Proteomic Correlates of Cognitive Resilience in Preclinical Alzheimer's Disease"
+version: 1.0.0
+date-released: 2025-02-17
+authors:
+  - family-names: "Nguyen"
+    given-names: "Minh Thien"
+    affiliation: "University of Medicine and Pharmacy at Ho Chi Minh City"
+  - family-names: "Mai"
+    given-names: "Thuy Thi Thanh"
+    affiliation: "University of Medicine and Pharmacy at Ho Chi Minh City"
+repository-code: "https://github.com/yourusername/preventad-resilience-proteomics"
+license: MIT
+keywords:
+  - Alzheimer's disease
+  - cognitive resilience
+  - proteomics
+  - cerebrospinal fluid
+  - PREVENT-AD
+  - SomaScan
+  - bioinformatics
+  - systems biology
+preferred-citation:
+  type: article
+  title: "CSF proteomic correlates of cognitive resilience in preclinical Alzheimer disease: opposing pathway enrichment for proteostasis and synaptic functions"
+  authors:
+    - family-names: "Nguyen"
+      given-names: "Minh Thien"
+    - family-names: "Mai"
+      given-names: "Thuy Thi Thanh"
+  journal: "Neurobiology of Aging"
+  year: 2025
+  status: "under-review"
+  notes: "This manuscript is currently under review. Citation details may change upon publication."
+references:
+  - type: article
+    title: "The PREVENT-AD Study: a prospective cohort of cognitively healthy aging persons with parental or multiple-sibling history of Alzheimer's disease"
+    authors:
+      - family-names: "Poirier"
+        given-names: "Judes"
+      - family-names: "Tremblay-Mercier"
+        given-names: "Jennifer"
+      - family-names: "Breitner"
+        given-names: "John C. S."
+    journal: "Alzheimer's & Dementia: Translational Research & Clinical Interventions"
+  year: 2022
+  volume: 8
+  issue: 1
+  pages: "e12322"
+  doi: "10.1002/trc2.12322"
