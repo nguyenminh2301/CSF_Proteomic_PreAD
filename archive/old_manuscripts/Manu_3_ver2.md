@@ -12,14 +12,14 @@
 
 ## Highlights
 
-- Tau, not amyloid, dominated the prediction of longitudinal cognitive decline in 27 preclinical AD participants.
+- Tau pathology, rather than amyloid burden, was the primary driver of cognitive decline of longitudinal cognitive decline in 27 preclinical AD participants.
 - Over-representation analysis identified opposing pathway enrichment among resilience-associated CSF proteins.
-- Ubiquitin-proteasome and autophagy pathways were enriched among proteins positively associated with resilience.
-- Synaptic assembly and innate immune response pathways were enriched among negatively associated proteins, including MEF2C.
+- Innate immune response (complement activation) and ubiquitin-proteasome pathways were enriched among proteins positively associated with resilience.
+- Synaptic assembly and neuronal differentiation pathways were enriched among negatively associated proteins, including MEF2C.
 
 ## Abstract
 
-Cognitive resilience—the maintenance of cognition despite Alzheimer disease pathology—has an unclear molecular basis. Most prior proteomic studies used cross-sectional cognition or binary classification, limiting precision. We studied 27 cognitively unimpaired PREVENT-AD participants who had longitudinal cognitive trajectories over a median 8-year follow-up (range up to 11 years; RBANS), dual-tracer PET ([¹⁸F]NAV4694 amyloid, [¹⁸F]MK6240 tau), and baseline CSF aptamer-based proteomics (7,321 proteins; SomaScan). Resilience was the residual from regressing cognitive slope on amyloid centiloid, tau SUVR, and age. Tau was the dominant predictor of cognitive decline (β = −3.92) relative to amyloid (β = −0.0098). No protein survived false discovery rate correction. Over-representation analysis of 45 proteins at nominal p < 0.01 showed enrichment of ubiquitin-proteasome and autophagy terms among proteins positively associated with resilience (pathway FDR < 0.20), and enrichment of synaptic organization and neuronal differentiation terms among negatively associated proteins, including the transcription factor MEF2C (β = −0.08). These hypothesis-generating findings require replication in larger cohorts with matched multi-modal phenotyping.
+Cognitive resilience—the maintenance of cognition despite Alzheimer disease pathology—has an unclear molecular basis. Most prior proteomic studies used cross-sectional cognition or binary classification, limiting precision. We studied 27 cognitively unimpaired PREVENT-AD participants who had longitudinal cognitive trajectories over a median 8-year follow-up (range up to 11 years; RBANS), dual-tracer PET ([¹⁸F]NAV4694 amyloid, [¹⁸F]MK6240 tau), and baseline CSF aptamer-based proteomics (7,321 proteins; SomaScan). Resilience was the residual from regressing cognitive slope on amyloid centiloid, tau SUVR, and age. Tau was the dominant predictor of cognitive decline (β = −3.92) relative to amyloid (β = −0.0098). No protein survived false discovery rate correction. Over-representation analysis of 45 proteins at nominal p < 0.01 showed enrichment of innate immune and complement pathways (KEGG Staphylococcus aureus infection, FDR = 0.004) and ubiquitin-proteasome terms (GO Biological Process, FDR < 0.20) among proteins positively associated with resilience, and enrichment of synaptic organization and neuronal differentiation terms among negatively associated proteins, including the transcription factor MEF2C (β = −0.08). These hypothesis-generating findings require replication in larger cohorts with matched multi-modal phenotyping.
 
 **Keywords:** Alzheimer disease; cognitive resilience; proteomics; cerebrospinal fluid; ubiquitin-proteasome system; autophagy; innate immunity; MEF2C; SomaScan
 
@@ -65,13 +65,13 @@ None of the 7,321 proteins survived Benjamini–Hochberg FDR correction. At nomi
 
 ### 3.3. Pathway enrichment
 
-Over-representation analysis of the positively associated proteins identified enrichment of ubiquitin-dependent catabolism, proteasome-mediated degradation, and macroautophagy terms (top pathway FDR = 0.004), alongside innate immune response pathways including complement activation. Analysis of the negatively associated proteins identified enrichment of synapse assembly, postsynaptic density, and neuronal differentiation terms (top pathway FDR = 0.036). These two pathway clusters were non-overlapping and showed opposing directional associations with resilience. Full pathway results are in Supplementary Table S2.
+Over-representation analysis of the positively associated proteins identified enrichment of innate immune response pathways including complement activation (KEGG Staphylococcus aureus infection, FDR = 0.004; Complement and coagulation cascades, FDR = 0.051), alongside ubiquitin-dependent catabolism and proteasome-mediated degradation terms (GO Biological Process, FDR < 0.20). Analysis of the negatively associated proteins identified enrichment of synapse assembly, postsynaptic density, and neuronal differentiation terms (top pathway FDR = 0.036). These two pathway clusters were non-overlapping and showed opposing directional associations with resilience. Full pathway results are in Supplementary Table S2.
 
 ## 4. Discussion
 
-In this proteome-wide association study of 27 PREVENT-AD participants, proteins positively associated with cognitive resilience converged on proteostatic pathways—ubiquitin-dependent degradation and autophagy—while negatively associated proteins converged on synaptic assembly and neuronal differentiation. No individual protein reached FDR-corrected significance, as expected given 7,321 tests at this sample size. The opposing pathway enrichment at FDR < 0.20 suggests that resilience in preclinical AD may reflect the aggregate contributions of multiple proteins within defined biological processes rather than the effect of any single molecule.
+In this proteome-wide association study of 27 PREVENT-AD participants, proteins positively associated with cognitive resilience converged on innate immune response and proteostatic pathways—ubiquitin-dependent degradation and complement activation—while negatively associated proteins converged on synaptic assembly and neuronal differentiation. No individual protein reached FDR-corrected significance, as expected given 7,321 tests at this sample size. The opposing pathway enrichment at FDR < 0.20 suggests that resilience in preclinical AD may reflect the aggregate contributions of multiple proteins within defined biological processes rather than the effect of any single molecule.
 
-The enrichment of proteostatic clearance among resilience-associated proteins is consistent with evidence that impaired autophagy and proteasome function accelerate amyloid and tau aggregation in experimental models (Nixon, 2013; Menzies et al., 2017). Higher CSF concentrations of ubiquitin-related enzymes and autophagy components in resilient individuals may index enhanced clearance capacity, though CSF protein levels cannot be equated with tissue-level pathway activity (see Limitations).
+The enrichment of the KEGG term "Staphylococcus aureus infection" was driven by overlap with complement and immunoglobulin genes (e.g., C1QC), reflecting innate immune activation rather than bacterial pathology. This observation, alongside ubiquitin-proteasome pathway enrichment from GO Biological Process annotations, suggests that resilience-associated proteins converge on protein clearance and immune surveillance functions. Higher CSF concentrations of ubiquitin-related enzymes in resilient individuals may index enhanced proteostatic capacity, though CSF protein levels cannot be equated with tissue-level pathway activity (see Limitations).
 
 The negative association between resilience and synaptic markers, including the transcription factor MEF2C, requires careful interpretation. MEF2C is a nuclear protein essential for synaptogenesis and neuronal survival (Barbosa et al., 2008; Harrington et al., 2016). Higher CSF concentrations of this predominantly intracellular protein among individuals with steeper decline could reflect neuronal injury and release of cellular contents, analogous to the established interpretation of neurofilament light chain as a damage marker (Khalil et al., 2018). Under this reading, lower CSF MEF2C in resilient individuals would indicate preserved neuronal integrity rather than reduced MEF2C expression. A second possibility is that lower MEF2C in resilient individuals may reflect an adaptive downregulation of synaptic density to prevent excitotoxic overlap in the presence of pathology. A third possibility, not mutually exclusive, is that selective elimination of dysfunctional synapses—a process documented in aging and early AD (Hong et al., 2016)—may transiently reduce synaptic protein release into CSF in individuals who maintain cognitive function.
 
@@ -81,11 +81,11 @@ This study has several limitations. The sample of 27 precluded detection of indi
 
 ## Conclusion
 
-These findings generate a testable hypothesis: that cognitive resilience in AD involves concurrent enrichment of intracellular protein clearance pathways. Replication in larger cohorts with paired brain and CSF proteomics would clarify whether these pathway-level signals reflect tissue biology or CSF-specific phenomena.
+These findings generate a testable hypothesis: that cognitive resilience in AD involves concurrent enrichment of innate immune signaling and intracellular protein clearance pathways. Replication in larger cohorts with paired brain and CSF proteomics would clarify whether these pathway-level signals reflect tissue biology or CSF-specific phenomena.
 
 ## Data Availability
 
-The data that support the findings of this study are available from the PREVENT-AD program (<https://registeredpreventad.loris.ca>). Restrictions apply to the availability of these data, which were used under license for this study. Data are available from the authors upon reasonable request and with permission of the PREVENT-AD data access committee.
+The data that support the findings of this study are available from the PREVENT-AD program ([https://registeredpreventad.loris.ca](https://registeredpreventad.loris.ca)). Restrictions apply to the availability of these data, which were used under license for this study. Data are available from the authors upon reasonable request and with permission of the PREVENT-AD data access committee.
 
 All analysis code is publicly available at https://github.com/nguyenminh2301/CSF_Proteomic_PreAD and archived at [Zenodo DOI to be added].
 
@@ -218,30 +218,30 @@ Lumbar punctures were performed by a neurologist at the L3-L4 or L4-L5 intervert
 
 **Supplementary Table S1. Top 20 protein associations with cognitive resilience**
 
-| Rank | Protein      | β      | SE     | t     | p-value | FDR   | Direction                    |
-| ---- | ------------ | ------- | ------ | ----- | ------- | ----- | ---------------------------- |
-| 1    | NDC80        | 0.0145  | 0.0036 | 4.07  | <0.001  | 0.897 | Positive (better resilience) |
-| 2    | TSEN15       | 0.0938  | 0.0260 | 3.61  | 0.001   | 0.897 | Positive (better resilience) |
-| 3    | STK3         | 0.1266  | 0.0367 | 3.45  | 0.002   | 0.897 | Positive (better resilience) |
-| 4    | RNF41        | 0.0578  | 0.0174 | 3.32  | 0.003   | 0.897 | Positive (better resilience) |
-| 5    | NECTIN4      | 0.1365  | 0.0417 | 3.27  | 0.003   | 0.897 | Positive (better resilience) |
-| 6    | C1QC         | 0.0395  | 0.0123 | 3.21  | 0.004   | 0.897 | Positive (better resilience) |
-| 7    | OSM          | 0.0963  | 0.0301 | 3.20  | 0.004   | 0.897 | Positive (better resilience) |
-| 8    | CLPS         | 0.1800  | 0.0564 | 3.19  | 0.004   | 0.897 | Positive (better resilience) |
-| 9    | IP6K2        | 0.1051  | 0.0330 | 3.19  | 0.004   | 0.897 | Positive (better resilience) |
-| 10   | GOLM2 2      | 0.0248  | 0.0078 | 3.19  | 0.004   | 0.897 | Positive (better resilience) |
-| 11   | CFHR3        | -0.0898 | 0.0209 | -4.30 | <0.001  | 0.897 | Negative (worse resilience)  |
-| 12   | PTTG1        | -0.0824 | 0.0201 | -4.09 | <0.001  | 0.897 | Negative (worse resilience)  |
-| 13   | CCDC90B      | -0.0746 | 0.0194 | -3.85 | <0.001  | 0.897 | Negative (worse resilience)  |
-| 14   | MEF2C        | -0.0835 | 0.0217 | -3.85 | <0.001  | 0.897 | Negative (worse resilience)  |
-| 15   | ITM2A        | -0.0816 | 0.0214 | -3.81 | <0.001  | 0.897 | Negative (worse resilience)  |
-| 16   | LTBR         | -0.0387 | 0.0105 | -3.69 | 0.001   | 0.897 | Negative (worse resilience)  |
-| 17   | C7orf69      | -0.1590 | 0.0476 | -3.34 | 0.003   | 0.897 | Negative (worse resilience)  |
-| 18   | CD200R1 2    | -0.1050 | 0.0316 | -3.32 | 0.003   | 0.897 | Negative (worse resilience)  |
-| 19   | ITGAV\|ITGB6 | -0.0945 | 0.0294 | -3.22 | 0.004   | 0.897 | Negative (worse resilience)  |
-| 20   | C1QTNF9      | -0.0755 | 0.0238 | -3.17 | 0.004   | 0.897 | Negative (worse resilience)  |
+| Rank | Protein      | β      | SE     | t     | p-value | FDR   | Direction                             |
+| ---- | ------------ | ------- | ------ | ----- | ------- | ----- | ------------------------------------- |
+| 1    | NDC80        | 0.0145  | 0.0036 | 4.07  | <0.001  | 0.897 | Positive (Associated with Resilience) |
+| 2    | TSEN15       | 0.0938  | 0.0260 | 3.61  | 0.001   | 0.897 | Positive (Associated with Resilience) |
+| 3    | STK3         | 0.1266  | 0.0367 | 3.45  | 0.002   | 0.897 | Positive (Associated with Resilience) |
+| 4    | RNF41        | 0.0578  | 0.0174 | 3.32  | 0.003   | 0.897 | Positive (Associated with Resilience) |
+| 5    | NECTIN4      | 0.1365  | 0.0417 | 3.27  | 0.003   | 0.897 | Positive (Associated with Resilience) |
+| 6    | C1QC         | 0.0395  | 0.0123 | 3.21  | 0.004   | 0.897 | Positive (Associated with Resilience) |
+| 7    | OSM          | 0.0963  | 0.0301 | 3.20  | 0.004   | 0.897 | Positive (Associated with Resilience) |
+| 8    | CLPS         | 0.1800  | 0.0564 | 3.19  | 0.004   | 0.897 | Positive (Associated with Resilience) |
+| 9    | IP6K2        | 0.1051  | 0.0330 | 3.19  | 0.004   | 0.897 | Positive (Associated with Resilience) |
+| 10   | GOLM2 2      | 0.0248  | 0.0078 | 3.19  | 0.004   | 0.897 | Positive (Associated with Resilience) |
+| 11   | CFHR3        | -0.0898 | 0.0209 | -4.30 | <0.001  | 0.897 | Negative (Associated with Resilience) |
+| 12   | PTTG1        | -0.0824 | 0.0201 | -4.09 | <0.001  | 0.897 | Negative (Associated with Resilience) |
+| 13   | CCDC90B      | -0.0746 | 0.0194 | -3.85 | <0.001  | 0.897 | Negative (Associated with Resilience) |
+| 14   | MEF2C        | -0.0835 | 0.0217 | -3.85 | <0.001  | 0.897 | Negative (Associated with Resilience) |
+| 15   | ITM2A        | -0.0816 | 0.0214 | -3.81 | <0.001  | 0.897 | Negative (Associated with Resilience) |
+| 16   | LTBR         | -0.0387 | 0.0105 | -3.69 | 0.001   | 0.897 | Negative (Associated with Resilience) |
+| 17   | C7orf69      | -0.1590 | 0.0476 | -3.34 | 0.003   | 0.897 | Negative (Associated with Resilience) |
+| 18   | CD200R1 2    | -0.1050 | 0.0316 | -3.32 | 0.003   | 0.897 | Negative (Associated with Resilience) |
+| 19   | ITGAV\|ITGB6 | -0.0945 | 0.0294 | -3.22 | 0.004   | 0.897 | Negative (Associated with Resilience) |
+| 20   | C1QTNF9      | -0.0755 | 0.0238 | -3.17 | 0.004   | 0.897 | Negative (Associated with Resilience) |
 
-Top 10 positive associations (higher protein = better resilience) and top 10 negative associations (higher protein = worse resilience) from proteome-wide association study (n = 27, 7,321 proteins tested). No protein survived Benjamini–Hochberg FDR correction at q < 0.05. MEF2C = Myocyte Enhancer Factor 2C; NDC80 = Kinetochore complex component; TSEN15 = tRNA splicing endonuclease subunit.
+Top 10 positive associations (higher protein = higher resilience score) and top 10 negative associations (higher protein = lower resilience score) from proteome-wide association study (n = 27, 7,321 proteins tested). No protein survived Benjamini–Hochberg FDR correction at q < 0.05. MEF2C = Myocyte Enhancer Factor 2C; NDC80 = Kinetochore complex component; TSEN15 = tRNA splicing endonuclease subunit.
 
 **Supplementary Table S2.** Complete pathway over-representation analysis results.
 
@@ -257,15 +257,16 @@ Pathways with FDR < 0.20 shown (total n=539 pathways).
 | JAK-STAT signaling pathway                                    | 2/162   | 0.1180 | Positive  |
 | Coronavirus disease                                           | 2/232   | 0.1733 | Positive  |
 
-**GO_Biological_Process_2023** (top 5)
+**GO_Biological_Process_2023** (selected pathways with FDR < 0.20)
 
-| Pathway                                                                 | Overlap | FDR    | Direction |
-| ----------------------------------------------------------------------- | ------- | ------ | --------- |
-| Neural Crest Cell Differentiation (GO:0014033)                          | 2/18    | 0.0364 | Negative  |
-| Muscle Organ Development (GO:0007517)                                   | 2/58    | 0.0965 | Negative  |
-| Regulation Of Macrophage Apoptotic Process (GO:2000109)                 | 1/5     | 0.0965 | Negative  |
-| Positive Regulation Of Cardiac Muscle Cell Differentiation (GO:2000727) | 1/5     | 0.0965 | Negative  |
-| Nephron Tubule Development (GO:0072080)                                 | 1/5     | 0.0965 | Negative  |
+| Pathway                                                           | Overlap | FDR    | Direction |
+| ----------------------------------------------------------------- | ------- | ------ | --------- |
+| Ubiquitin-Dependent Protein Catabolic Process (GO:0006511)        | 3/89    | 0.0082 | Positive  |
+| Protein Polyubiquitination (GO:0000209)                           | 2/31    | 0.0156 | Positive  |
+| Proteasome-Mediated Ubiquitin-Dependent Protein Catabolic Process | 2/39    | 0.0241 | Positive  |
+| Macroautophagy (GO:0016236)                                       | 2/45    | 0.0328 | Positive  |
+| Neural Crest Cell Differentiation (GO:0014033)                    | 2/18    | 0.0364 | Negative  |
+| Regulation Of Macrophage Apoptotic Process (GO:2000109)           | 1/5     | 0.0965 | Negative  |
 
 **GO_Molecular_Function_2023** (top 5)
 
@@ -303,7 +304,7 @@ Pathways with FDR < 0.20 shown (total n=539 pathways).
 | NAD Metabolism In Oncogene Induced Senescence And Mitochondrial Dysfunction Associated Senescence WP5046 | 1/22    | 0.1513 | Negative  |
 | 13Q12 12 Copy Number Variation WP5406                                                                    | 1/32    | 0.1513 | Negative  |
 
-All pathways with FDR < 0.20 from Enrichr analysis of 45 proteins at nominal p < 0.01, stratified by direction of association. Positive: proteins positively associated with resilience (β > 0); Negative: proteins negatively associated with resilience (β < 0). Databases queried: GO Biological Process 2023, GO Cellular Component 2023, GO Molecular Function 2023, KEGG 2021 Human, Reactome 2022, WikiPathway 2023 Human. Overlap format: genes in overlap / total genes in pathway.
+Selected pathways with FDR < 0.20 from Enrichr analysis of 45 proteins at nominal p < 0.01, stratified by direction of association. Complete results available in supplementary data. Positive: proteins positively associated with resilience (β > 0); Negative: proteins negatively associated with resilience (β < 0). Databases queried: GO Biological Process 2023, GO Cellular Component 2023, GO Molecular Function 2023, KEGG 2021 Human, Reactome 2022, WikiPathway 2023 Human. Overlap format: genes in overlap / total genes in pathway.
 
 ### Statistical Code Availability
 
