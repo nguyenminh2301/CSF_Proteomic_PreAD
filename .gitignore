@@ -96,7 +96,6 @@ parts/
 sdist/
 var/
 wheels/
-manuscript/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -211,6 +210,13 @@ $RECYCLE.BIN/
 
 archive/**/desktop.ini
 archive/**/*.tmp
+
+# LaTeX auxiliary/generated files
+*.aux
+*.bbl
+*.blg
+*.pag
+*.synctex.gz
 
 # ============================================
 # DOCUMENTATION BUILD

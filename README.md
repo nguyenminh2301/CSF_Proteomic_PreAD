@@ -8,11 +8,11 @@ This repository contains analysis code and supplementary materials for the resea
 
 > **CSF proteomic correlates of cognitive resilience in preclinical Alzheimer disease: opposing pathway enrichment for proteostasis and synaptic functions**
 
-## 📋 Overview
+## Overview
 
 Cognitive resilience—the maintenance of cognition despite Alzheimer disease pathology—has an unclear molecular basis. This research investigated CSF protein associations with cognitive resilience in 27 cognitively unimpaired PREVENT-AD participants with longitudinal cognitive trajectories (median 8-year follow-up), dual-tracer PET, and high-throughput proteomics.
 
-> **Note**: The manuscript document is not included in this public repository. This repository contains analysis code, figures, tables, and processed data only.
+**Target journal**: *Molecular Neurobiology* (Brief Report)
 
 ### Key Findings
 
@@ -21,44 +21,38 @@ Cognitive resilience—the maintenance of cognition despite Alzheimer disease pa
 - **Synaptic pathways**: Neuronal differentiation and synaptic assembly terms enriched among negatively associated proteins (including MEF2C)
 - **No individual proteins survived FDR correction**, but pathway-level signals suggest resilience reflects aggregate protein contributions
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
-├── README.md                 # This file
-├── LICENSE                   # MIT License
-├── .gitignore               # Git ignore rules
-├── CITATION.cff             # Citation file
-# Note: Manuscript files are not included in this public repository
-├── R/                       # R analysis code
-│   ├── 01_main_analysis.R   # Resilience model, PWAS, enrichment
-│   ├── 02_figures.R         # Professional figure generation (Lancet style)
-│   └── 03_tables.R          # Q1 journal standard table generation
-├── data/                    # Data files (raw + processed)
-│   ├── raw/                 # Raw data (not tracked in git)
-│   └── processed/           # Processed analysis outputs
-├── figures/                 # Generated figures
-│   ├── main/                # Main manuscript figures
-│   │   ├── Fig1.{png,pdf,tiff}    # Combined diagnostics + volcano
-│   │   └── Fig2.{png,pdf,tiff}    # Pathway enrichment bubble plot
-│   └── supplementary/       # Supplementary figures
-│       ├── FigS1_diagnostics.*    # Model diagnostics
-│       ├── FigS1B_volcano.*       # Separate volcano plot
-│       ├── FigS2_cooks_distance.* # Cook's distance analysis
-│       ├── FigS3_distribution.*   # Resilience score distribution
-│       └── FigS4_sensitivity.*    # Sensitivity analysis
-├── tables/                  # Generated tables
+├── README.md                       # This file
+├── LICENSE                         # MIT License
+├── CITATION.cff                    # Citation metadata
+├── REPOSITORY_GUIDE.md             # Detailed guide for contributors
+├── R/                              # R analysis scripts
+│   ├── 01_main_analysis.R          # Resilience model, PWAS, enrichment
+│   ├── 02_figures.R                # Figure generation
+│   ├── 03_tables.R                 # Table generation
+│   └── 04_sensitivity_analysis.R   # Sensitivity analysis
+├── data/
+│   ├── raw/                        # Raw data (not tracked — restricted access)
+│   └── processed/                  # Processed outputs (de-identified)
+├── figures/
+│   ├── main/                       # Fig1.{png,pdf,tiff}, Fig2.{png,pdf,tiff}
+│   └── supplementary/              # FigS1–FigS4 (diagnostics, volcano, sensitivity)
+├── tables/
 │   ├── Table1_baseline_characteristics.{csv,md}
 │   ├── Table2_model_results.{csv,md}
 │   ├── SupplementaryTableS1_top_proteins.{csv,md}
 │   └── SupplementaryTableS2_pathway_enrichment.{csv,md}
-└── archive/                 # Archived old versions
-    ├── old_figures/         # Previous figure versions
-    ├── old_manuscripts/     # Previous manuscript drafts
-    └── old_docs/            # Old documentation
+└── archive/                        # Archived materials (not for reproduction)
+    ├── old_figures/                 # Previous figure versions
+    ├── old_manuscripts/             # Previous manuscript drafts
+    ├── old_docs/                    # Old documentation and journal notes
+    └── ejn_templates/               # EJN LaTeX templates (reference only)
 ```
 
-## 🔧 Requirements
+## Requirements
 
 ### Software
 
@@ -88,9 +82,9 @@ This analysis uses data from the **PREVENT-AD** cohort. Data access is restricte
 2. Approval from the PREVENT-AD data access committee
 3. Appropriate ethics approvals
 
-> ⚠️ **Note**: Raw PREVENT-AD data files are NOT included in this repository due to data sharing restrictions. Processed outputs (summary statistics, de-identified results) are provided in `data/processed/`.
+> **Note**: Raw PREVENT-AD data files are NOT included in this repository due to data sharing restrictions. Processed outputs (summary statistics, de-identified results) are provided in `data/processed/`.
 
-## 🚀 Usage
+## Usage
 
 ### Reproducing the Analysis
 
@@ -101,25 +95,20 @@ git clone https://github.com/nguyenminh2301/CSF_Proteomic_PreAD.git
 cd CSF_Proteomic_PreAD
 ```
 
-2. **Obtain PREVENT-AD data access**:
+2. **Obtain PREVENT-AD data access** (see `data/raw/README.md` for required files):
 
    - Register at [registeredpreventad.loris.ca](https://registeredpreventad.loris.ca)
-   - Download required data files
-   - Place in `data/raw/` directory (see `data/raw/README.md` for file list)
+   - Place downloaded files in `data/raw/`
+
 3. **Run the analysis pipeline**:
 
 ```r
-# In R, set working directory to repository root
 setwd("path/to/CSF_Proteomic_PreAD")
 
-# Run main analysis
-source("R/01_main_analysis.R")
-
-# Generate figures
-source("R/02_figures.R")
-
-# Generate tables
-source("R/03_tables.R")
+source("R/01_main_analysis.R")       # Resilience model + PWAS
+source("R/02_figures.R")             # Generate figures
+source("R/03_tables.R")              # Generate tables
+source("R/04_sensitivity_analysis.R") # Sensitivity analysis
 ```
 
 ### Analysis Workflow
@@ -133,7 +122,7 @@ Raw Data → Resilience Model → PWAS → Pathway Enrichment → Figures/Tables
   Proteomics
 ```
 
-## 📊 Key Outputs
+## Key Outputs
 
 ### Main Figures
 
@@ -143,6 +132,7 @@ Raw Data → Resilience Model → PWAS → Pathway Enrichment → Figures/Tables
 ### Supplementary Figures
 
 - **Figure S1**: Detailed model diagnostics (4-panel)
+- **Figure S1B**: Separate volcano plot
 - **Figure S2**: Cook's distance influence analysis
 - **Figure S3**: Resilience score distribution
 - **Figure S4**: Sensitivity analysis across p-value thresholds
@@ -154,49 +144,49 @@ Raw Data → Resilience Model → PWAS → Pathway Enrichment → Figures/Tables
 - **Supplementary Table S1**: Top 20 protein associations
 - **Supplementary Table S2**: Complete pathway enrichment results
 
-## 📖 Citation
+## Citation
 
 If you use this code or data, please cite:
 
 ```
-Nguyen MT, Mai TT. CSF proteomic correlates of cognitive resilience in 
-preclinical Alzheimer's disease: opposing pathway enrichment for proteostasis 
-and synaptic functions. [Manuscript in preparation]
+Nguyen MT, Mai TT. CSF proteomic correlates of cognitive resilience in
+preclinical Alzheimer's disease: opposing pathway enrichment for proteostasis
+and synaptic functions. Molecular Neurobiology. [Under review]
 ```
 
 And the PREVENT-AD cohort paper:
 
 ```
-Poirier J, Tremblay-Mercier J, Breitner JCS, et al. The PREVENT-AD Study: 
-a prospective cohort of cognitively healthy aging persons with parental or 
-multiple-sibling history of Alzheimer's disease. Alzheimers Dement (N Y). 
+Poirier J, Tremblay-Mercier J, Breitner JCS, et al. The PREVENT-AD Study:
+a prospective cohort of cognitively healthy aging persons with parental or
+multiple-sibling history of Alzheimer's disease. Alzheimers Dement (N Y).
 2022;8(1):e12322. doi: 10.1002/trc2.12322
 ```
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
 
 The PREVENT-AD data are subject to separate terms of use available at [registeredpreventad.loris.ca](https://registeredpreventad.loris.ca).
 
-## 👥 Authors
+## Authors
 
-- **Minh Thien Nguyen, MSc** - Data Curation, Formal Analysis, Visualization, Writing
-- **Thuy Thi Thanh Mai, MSc** - Conceptualization, Supervision, Funding Acquisition
+- **Minh Thien Nguyen, MSc** — Data Curation, Formal Analysis, Visualization, Writing
+- **Thuy Thi Thanh Mai, MSc** — Conceptualization, Supervision, Funding Acquisition
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **PREVENT-AD Research Group** for data collection and curation
 - **StoP-AD Centre**, McGill University for research infrastructure
 - **Douglas Mental Health University Institute** for ethics approval and facilities
 - Participants and families in the PREVENT-AD cohort
 
-## 📞 Contact
+## Contact
 
 For questions about this analysis:
 
 - Email: nguyenminh2301[at]gmail[dot]com
-- Issues: Please use GitHub Issues for code-related questions
+- Issues: Please use [GitHub Issues](https://github.com/nguyenminh2301/CSF_Proteomic_PreAD/issues) for code-related questions
 
 For PREVENT-AD data access:
 
@@ -205,5 +195,5 @@ For PREVENT-AD data access:
 
 ---
 
-**Last Updated**: 2025-02-17
-**Version**: 1.0.0
+**Last Updated**: 2026-02-23
+**Version**: 1.1.0

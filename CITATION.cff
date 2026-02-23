@@ -11,7 +11,7 @@ authors:
   - family-names: "Mai"
     given-names: "Thuy Thi Thanh"
     affiliation: "University of Medicine and Pharmacy at Ho Chi Minh City"
-repository-code: "https://github.com/yourusername/preventad-resilience-proteomics"
+repository-code: "https://github.com/nguyenminh2301/CSF_Proteomic_PreAD"
 license: MIT
 keywords:
   - Alzheimer's disease
@@ -30,10 +30,10 @@ preferred-citation:
       given-names: "Minh Thien"
     - family-names: "Mai"
       given-names: "Thuy Thi Thanh"
-  journal: "Neurobiology of Aging"
-  year: 2025
+  journal: "Molecular Neurobiology"
+  year: 2026
   status: "under-review"
-  notes: "This manuscript is currently under review. Citation details may change upon publication."
+  notes: "This manuscript is currently under review at Molecular Neurobiology. Citation details may change upon publication."
 references:
   - type: article
     title: "The PREVENT-AD Study: a prospective cohort of cognitively healthy aging persons with parental or multiple-sibling history of Alzheimer's disease"
